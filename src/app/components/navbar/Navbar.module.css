@@ -1,0 +1,63 @@
+/* components/navbar/Navbar.module.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4rem;
+}
+
+.brand a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.menuIcon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 1rem;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .menuIcon {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu li {
+        text-align: center;
+        margin: 1rem 0;
+    }
+}

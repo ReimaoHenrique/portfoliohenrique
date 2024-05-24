@@ -1,0 +1,7 @@
+/* home.module.css */
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+}
